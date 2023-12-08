@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+#curriculo-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#right-column {
+    flex: 2;
+}
+
+h1 {
+    color: #070707;
+    font-size: 50px;
+}
+
+h2 {
+    color: #f8f8f8;
+}
+
+hr {
+    border: 1px solid #000000;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+strong {
+    color: #000200;
+    font-size: 25px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}

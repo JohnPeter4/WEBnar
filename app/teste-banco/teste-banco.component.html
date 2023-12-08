@@ -1,0 +1,11 @@
+<br/><br/>
+<p>Aqui iremos conectar o back-end</p>
+<hr/>
+
+<button (click)="chamadaBack()">Pegar valores do banco</button>
+<label>Entre com o código: <input [(ngModel)]="vItemcode" /></label>
+<br/><br/>
+<button (click)="chamadaBackPost()">Teste do Back Post</button>
+<ul *ngIf="(clientResultNome)">       
+    <li>{{clientResultNome}} </li>
+</ul>

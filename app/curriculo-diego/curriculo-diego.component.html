@@ -1,0 +1,32 @@
+<div id="curriculo-container">
+    <div id="left-column">
+        <!-- Adicione a foto aqui -->
+        <img src="../../assets/imagens/Diego.png" alt="João Pedro">
+    </div>
+    <div id="right-column">
+        <h1>Diego</h1>
+
+        <h2>Informações Pessoais</h2>
+        <p><strong>Nome:</strong> {{ curriculo.nome }}</p>
+        <p><strong>Contato:</strong> {{ curriculo.contato }}</p>
+        <p><strong>LinkedIn:</strong> {{ curriculo.linkedin }}</p>
+        <p><strong>Telefone:</strong> {{ curriculo.telefone }}</p>
+        <p><strong>Endereço:</strong> {{ curriculo.endereco }}</p>
+
+        <hr>
+        <h2>Objetivo</h2>
+        <p>{{curriculo.objetivo}}</p>
+
+        <hr>
+        <h2>Formação Acadêmica</h2>
+        <ul>
+            <li *ngFor="let formacao of curriculo.formacaoAcademica">{{ formacao }}</li>
+          </ul>
+
+        <hr>
+        <h2>Habilidades e Competências</h2>
+        <p><strong>{{curriculo.habilidadesECompetencias}}</strong></p>
+
+        <hr>
+    </div>
+</div>

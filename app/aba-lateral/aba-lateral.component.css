@@ -1,0 +1,101 @@
+.left-sidebar{
+    flex-basis: 10%;
+    margin-left: -80px;
+    position: sticky;
+    align-self:flex-start;
+    background-color: rgb(7, 7, 7);
+    padding: 70px 70px 400px 70px;
+}
+.imp-links a,.shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+
+}
+.imp-links a img{
+    width: 25px;
+    margin-right: 15px;
+
+}
+.imp-links a:last-child{
+    color:blue;
+
+}
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-links{
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 5px;
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    position: sticky;
+}
+
+.online-list img{
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.online-list .online{
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.online-list .online::after{
+    top:unse;
+    bottom: 5px;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right-sidebar{
+    flex-basis: 25%;
+    top:70px;
+    align-self:flex-start;
+    background-color: rgb(7, 7, 7);
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+    position: sticky;
+    z-index: 0;
+    margin-top: 10%;
+    font-size: 40px;
+}
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.sidebar-title a{
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+}

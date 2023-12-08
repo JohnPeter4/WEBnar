@@ -1,0 +1,59 @@
+<div class="main-content">
+
+    <!--Inicio Post user perfil-->
+<div class="write-post-container">
+    <!--Inicio Foto Post user perfil-->
+   <div class="user-profile">
+    <img src="assets/imagens/user.jpg" alt="">
+    <div>
+        <p>usuário </p>
+    </div>
+   </div>
+</div> 
+ <!--Fim Post user perfil-->
+
+ <!--Inicio do post textarea -->
+ <div class="post-input-container">
+    <!--PUBLICAR COMENTÀRIO-->
+    <!-- Adicione a diretiva ngModel no textarea para vinculá-lo à propriedade novoComentario no TypeScript -->
+    <textarea rows="3" placeholder="O que você está pensando" [(ngModel)]="novoComentario"></textarea>
+
+    <!-- Botão de publicar que chama a função adicionarComentario() -->
+    <button class="button" (click)="adicionarComentario()">Publicar</button>
+
+    <!-- Exibir os comentários -->
+    <div class="post-container">
+        <div class="post-row" *ngFor="let comentario of comentarios;let i = index">
+          <!-- Estrutura do comentário -->
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="assets/imagens/user.jpg" alt="">
+              <div>
+                <p>{{ comentario.autor }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            {{ comentario.texto }}
+            <button class="button" (click)="removerComentario(i)">Remover</button>
+          </div>
+        </div>
+      </div>
+
+ <!--Fim do post texto -->
+
+ <!--Inicio do post feed -->
+    <div class="post-container">
+        <div class="post-row">
+
+            
+        </div>
+    </div>
+<!--Fim do post feed -->
+
+
+
+
+<!--Fim Barra Lateral  direita do site--> 
+
+</div>

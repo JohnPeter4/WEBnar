@@ -1,0 +1,35 @@
+.barra{
+    background-color: blue;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 4% 100px;
+    position: relative;
+    height: 100vh;
+}
+
+
+.lateral, .aviso {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1%;
+}
+
+.lateral {
+    left: 0;
+    width: 200px; /* Ajuste conforme necessário */
+}
+
+.aviso {
+    right: -10px;
+    width: 400px; /* Ajuste conforme necessário */
+}
+
+.main-content {
+    margin: 0 200px; /* Leva em consideração a largura da barra lateral e da barra de avisos */
+    flex-grow: 1;
+    overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo for grande */
+    padding: 1%  20% 0  20%;
+}

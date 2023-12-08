@@ -1,0 +1,84 @@
+
+.main-content{
+    flex-basis: 47%;
+    margin-top: 10%;
+}
+.write-post-container{
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+.user-profile{
+    display:flex;
+    align-items: center;
+    
+}
+
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile{
+    margin-bottom:-5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile smail{
+    font-size:12px;
+
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#626262;
+    margin-right:30px;
+    font-size: 13px;
+}
+.add-post-links a img{
+    width: 20px;
+    margin-right: 10px;
+}
+.button{
+    font-weight:bold;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    padding: 3px;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.08, 0.55 0.55, 1);
+    font-size: 10px;
+    background-color: #1877f2;
+    width: 100%;
+
+}
+.post-container{
+    max-width: 400px;
+}
